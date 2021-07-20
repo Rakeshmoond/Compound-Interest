@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INterest calculator</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
 <script src="index.js"></script>
 
 </head>
 <body>
-    <h1 style="position: absolute;font-weight: bold;color: coral; font-family: fantasy;">Hello , Guys</h1>
-    
-    <p style="font-weight: 500; padding-top: 70px; transform: rotateY(30); text-transform: capitalize;">
+    <h1 style="position: absolute;font-weight: bold;color: coral; font-family: fantasy;" class="jumbotron">Hello , Guys</h1>
+    <br><br><br>
+    <p style="font-weight: 500; padding-top: 70px; transform: rotateY(30); text-transform: capitalize;"class="page-header">
         here you can calculate compound INterest (2%)
     </p>
     <h4> <u>Procedure-</u></h4>
     <ul type="circle" style="text-transform: capitalize;">
-        <li>insert money</li>
-        <li>insert given/taken money first date</li>
-        <li>insert given/taken money last date</li>
-        <li>click calculate button</li>
+        <li class="alert alert-info  " >insert money</li>
+        <li class="alert alert-success">insert given/taken money first date</li>
+        <li class="alert alert-warning">insert given/taken money last date</li>
+        <li class="alert alert-danger">click calculate button</li>
     </ul>
-   <table align="center">
+   <table align="center" class="table table-hover table-border table-condensed table-stripped" cellspacing="2" width="30%" border="1">
     <form >
 <tr>
 <td>
@@ -51,9 +54,9 @@
 </tr>
 
 <tr>
-    <td><button style="font-family: fantasy; border-radius: 30%;empty-cells: show;">Reset</button></td>
-    <td  style="empty-cells: show; " ><br><input type="button" value="Calculate" id="button" onclick="interest(this)"> <br> <br></td>
-<br></tr>
+    <td> <br><button style="font-family: fantasy; border-radius: 30%;empty-cells: show;">Reset</button></td>
+    <td  style="empty-cells: show; " ><br><input type="button" value="Calculate" id="button" onclick="interest(this)"></td>
+</tr>
 
 <tr>
     <td>
