@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INterest calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</head>
+<body>
+    <h1 style="position: absolute;font-weight: bold;color: coral; font-family: fantasy;">Hello , Guys</h1>
+    
+    <p style="font-weight: 500; padding-top: 70px; transform: rotateY(30); text-transform: capitalize;">
+        here you can calculate compound INterest (2%)
+    </p>
+    <h4> <u>Procedure-</u></h4>
+    <ul type="circle" style="text-transform: capitalize;">
+        <li>insert money</li>
+        <li>insert given/taken money first date</li>
+        <li>insert given/taken money last date</li>
+        <li>click calculate button</li>
+    </ul>
+   <table align="center">
+    <form >
+<tr>
+<td>
+    First Date:
+</td>
+  <td>
+      <input type="date"  id="fdate">
+  </td>
+</tr>
+<tr>
+<td>
+    Last Date:
+</td>
+  <td>
+      <input type="date" name="05-05-2005" id="ldate">
+  </td>
+</tr>
+<tr>
+<td>
+    Insert Money:
+</td>
+  <td>
+      <input type="text"  id="insertmoney">
+  </td>
+</tr>
+
+<tr>
+    <td><button style="font-family: fantasy; border-radius: 30%;empty-cells: show;">Reset</button></td>
+    <td  style="empty-cells: show; " ><br><input type="button" value="Calculate" id="button" onclick="interest(this)"> <br> <br></td>
+<br></tr>
+
+<tr>
+    <td>
+        Your Tatal Money After Interest: 
+    </td>
+    <td>
+        <input type="text" id="totalmoney">
+    </td>
+</tr>
+   
+   </table>
+   <div id="demo"></div>
+</body>
+</html>
