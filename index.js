@@ -36,4 +36,7 @@ window.alert("Please enter valid data");
     }
 }
 }
+var a=4;
+var b=9;
+console.log(a+b);
 
